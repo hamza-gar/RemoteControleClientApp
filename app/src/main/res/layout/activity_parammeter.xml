@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mouse">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="60dp"
+
+            android:layout_height="60dp"
+            android:layout_marginStart="4dp"
+
+            android:layout_marginTop="4dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_left_24"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#e45762"
+            app:strokeWidth="3dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="282dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="208dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="500dp"
+            android:drawableLeft="@drawable/ic_baseline_record_voice_over_24"
+
+            android:onClick="startSpeaker"
+            android:text="Sound On"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#e45762"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="15dp"
+
+            android:drawableLeft="@drawable/ic_baseline_voice_over_off_24"
+            android:onClick="stopSpeaker"
+            android:text="Sound Off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#e45762"
+            app:strokeWidth="2dp" />
+
+        <Button
+            android:id="@+id/connectBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="356dp"
+            android:onClick="send"
+            android:text="connect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
